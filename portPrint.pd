@@ -1,0 +1,14 @@
+#N canvas 677 267 450 300 10;
+#X obj 53 27 loadbang;
+#X msg 146 68 close;
+#X obj 229 70 r serial;
+#X msg 67 130 devices;
+#X obj 281 215 print;
+#X msg 55 68 open 2;
+#X obj 188 164 comport 2 9600;
+#X connect 0 0 5 0;
+#X connect 1 0 6 0;
+#X connect 2 0 6 0;
+#X connect 3 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 1 4 0;
